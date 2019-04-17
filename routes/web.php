@@ -26,8 +26,7 @@ Route::get('/register', function () {
 
 
 Route::group(['middleware' => 'manager', 'prefix' => 'manager'], function () {
-    Route::get('/dashboard', function () {
-        return view('pages.manager.dashboard');
-    })->name('manager.dashboard');
-    
+    Route::get('/dashboard', 'EventsController@dashboard')->name('manager.dashboard');
+    Route::get('/add-event', 'EventsController@create')->name('create.event');
+    Route::post('/add-event', 'EventsController@store')->name('add.event');
 });

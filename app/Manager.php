@@ -25,8 +25,5 @@ class Manager extends Model
         'password', 'remember_token',
     ];
 
-    public function events()
-    {
-        return $this->hasMany('App\Events');
-    }
+
 }
