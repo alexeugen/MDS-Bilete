@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class Manager extends Model
 {
@@ -23,4 +24,9 @@ class Manager extends Model
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function events()
+    {
+        return $this->hasMany('App\Events');
+    }
 }

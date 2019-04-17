@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/login', function () {
+    return view('pages.login');
+})->name('login');
+
+
+Route::get('/register', function () {
+    return view('pages.register');
+})->name('register');
+
+
+Route::group(['middleware' => 'manager', 'prefix' => 'manager'], function () {
+    Route::get('/dashboard', function () {
+        return view('pages.manager.dashboard');
+    })->name('manager.dashboard');
+    
 });
