@@ -18,7 +18,7 @@ main{
 }
 
 nav {
-    z-index:2;
+    z-index:999;
 }
 
 #slideshow{
@@ -188,3 +188,43 @@ nav {
 #prevSlide:hover, #nextSlide:hover {
     background-color: rgba(60, 60, 60, 0.8);
   }
+
+
+#home-events {
+    padding:100px 0;
+}
+
+#home-events ._card {
+    background: white;
+    border-radius: 5px;
+    height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#home-events ._card img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 300px;
+    width: 210px;
+}
+
+#home-events ._card .buy-btn {
+    background: #ff5A5f;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    color: white;
+}
+
+
+#home-events ._card .buy-btn:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}

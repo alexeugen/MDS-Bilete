@@ -24,6 +24,7 @@ Route::get('/register', function () {
     return view('pages.register');
 })->name('register');
 
+Route::get('/event/{id}','EventsController@displayEvent')->name('event');
 
 Route::group(['middleware' => 'manager', 'prefix' => 'manager'], function () {
     Route::get('/dashboard', 'EventsController@dashboard')->name('manager.dashboard');

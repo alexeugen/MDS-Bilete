@@ -11,26 +11,26 @@
  
   <div class="slide">
       <img class="slideshow-background"
-         src="/img/background1.jpg">
+         src={{"/images/".$event->background}}>
       <div class="slideshow-mask"></div>
       <div class="slideshow-body">
       <h2>{{$event->title}}</h2>
         <div class="slideshow-content">
             <div class="slide-info">
-                <p class="slide-regie">post.regie</p>
-                <p class="slide-actori">post.actori</p>
+            <p class="slide-regie">{{$event->regizor}}</p>
+            
                 <br>
                 <p class="slide-descriere">{{$event->description}}</p>
                 <br>
                 <div class="slide-format">
                     <div>
-                    <p class="slide-locatie">post.locatie</p>
-                    <p class="slide-data">post.data</p>
+                    <p class="slide-locatie">{{$event->location}}</p>
+                    <p class="slide-data">{{$event->formattedDate().' '.$event->formattedTime()}}</p>
                     </div>
                       <button class="slide-bttn">Cumpara Acum</button>
                   </div>
               </div>
-              <img class="slide-img" src="/img/poster1.jpg">
+              <img class="slide-img" src={{"/images/".$event->poster}}>
           </div>
       </div>
   </div>
@@ -39,6 +39,37 @@
 </div>
 <!-- END OF SLIDESHOW -->
 
+<div class="container" id="home-events">
+  <div class="row">
+    @foreach ($events as $event)
+      <div class="col-md-6">
+        <div class="_card">
+          <p style="margin-bottom: 0; font-size: 24px;">
+            {{$event->title}}
+          </p>
+          <p style="color:gray; font-size: 12px; margin-bottom: 30px;">
+            by {{$event->regizor}}
+          </p>
+          <p>
+            {{$event->locatie}}
+          </p>
+          <p>
+            {{$event->formattedDate().' '.$event->formattedTime()}}
+          </p>
+        <a class="buy-btn" href="{{ route('event', ['id'=> $event->id]) }}">Buy now</a>
+          
+           <img class="slide-img" src={{"/images/".$event->poster}}>
+          
+        </div>
+      </div>
+    @endforeach
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
 @endsection
 
 @push('scripts')

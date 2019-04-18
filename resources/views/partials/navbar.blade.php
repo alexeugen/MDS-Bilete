@@ -1,12 +1,12 @@
 <header>
     <nav>
-        <a href="{{route('home')}}">
-            <div id="nav-logo-area">
-                <img src="/img/twitter.png">
-                <h1>Bilete Teatru</h1>
+        <div id="nav-logo-area">
+            <i class="fas fa-ticket-alt" style="font-size: 40px; color: gray;"></i>
+            <a href="{{route('home')}}" style="list-style-type: none; margin-left:10px;">
+               Bilete Teatru
                 {{-- TO DO --}}
+            </a>
             </div>
-        </a>
         <div id="nav-search-area">
             {{-- <input type="text" placeholder="Cauta spectacole"> --}}
         </div>

@@ -11,6 +11,7 @@ body {
 #add-event input{
   background: white !important;
   padding: 6px;
+  height: 44px;
   border-radius: 3px;
   border: 1px solid rgb(204, 101, 101) !important;
 } 
@@ -20,6 +21,10 @@ body {
   padding: 6px;
   border-radius: 3px;
   border: 1px solid rgb(204, 101, 101) !important;
+} 
+
+#add-event form{
+  width: 100%;
 } 
 
 #add-event .btn-submit {
