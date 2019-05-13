@@ -46,6 +46,8 @@ class EventsController extends Controller
         $event->background = $bgName;
         $event->save();
 
+        // dd($event->data);
+
         return redirect()->route('manager.dashboard');
     }
 
