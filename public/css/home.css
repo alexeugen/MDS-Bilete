@@ -8,15 +8,6 @@
     outline: none;
 }
 
-main,footer{
-    position: relative;
-    top: 60px;
-    overflow: hidden;
-}
-main{
-    background-color: #087E8B;
-}
-
 nav {
     z-index:999;
 }

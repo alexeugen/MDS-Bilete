@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@push('styles')
+    <link href="/css/event.css" rel="stylesheet">
+@endpush
+
 @section('content')
 <section class="ev-container">
 

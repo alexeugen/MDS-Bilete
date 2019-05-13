@@ -21,6 +21,7 @@ nav{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
+  z-index: 300;
 }
 
 
@@ -100,6 +101,34 @@ nav{
 main,footer{
   position: relative;
   top: 60px;
-  overflow: hidden;
 }
  
+
+@media screen and (max-width: 925px) {
+  main,footer{
+    top: 120px;
+  }
+  nav{
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-logo-area{
+    padding: 0px;
+    height: 60px;
+    box-sizing: border-box;
+    /* border: 2px solid yellow; */
+  }
+  #nav-login-area{
+    height: 60px;
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 420px){
+  .login-button{
+    width: 50vw;
+    padding: 0;
+  }
+}

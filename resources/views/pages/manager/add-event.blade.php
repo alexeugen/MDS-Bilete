@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@push('styles')
+    <link href="/css/add_event.css" rel="stylesheet">
+@endpush
+
 @section('content')
 <br>
 <br>
