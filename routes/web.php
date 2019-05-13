@@ -24,10 +24,12 @@ Route::get('/register', function () {
     return view('pages.register');
 })->name('register');
 
-Route::get('/event/{id}','EventsController@displayEvent')->name('event');
+// Route::get('/event/{id}','EventsController@displayEvent')->name('event');
 
 Route::group(['middleware' => 'manager', 'prefix' => 'manager'], function () {
     Route::get('/dashboard', 'EventsController@dashboard')->name('manager.dashboard');
     Route::get('/add-event', 'EventsController@create')->name('create.event');
     Route::post('/add-event', 'EventsController@store')->name('add.event');
 });
+
+Route::get('/event/book', 'BookingController@store')->name('event.book');

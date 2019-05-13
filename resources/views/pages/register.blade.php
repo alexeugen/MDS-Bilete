@@ -82,7 +82,7 @@
       </div>
   </form>
   <div>
-      <small class="text-muted">Already have an account? <a class="ml-2" href="{% url 'login' %}">Sign In</a></small>
+      <small class="text-muted">Already have an account? <a class="ml-2" href="{{route('login')}}" >Sign In</a></small>
   </div>
 </div>
 </div>
