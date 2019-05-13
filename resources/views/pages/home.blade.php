@@ -18,11 +18,10 @@
          src={{"/images/".$event->background}}>
       <div class="slideshow-mask"></div>
       <div class="slideshow-body">
-      <h2>{{$event->title}}</h2>
+        <h2>{{$event->title}}</h2>
         <div class="slideshow-content">
             <div class="slide-info">
-            <p class="slide-regie">{{$event->regizor}}</p>
-            
+                <p class="slide-regie">{{$event->regizor}}</p>
                 <br>
                 <p class="slide-descriere">{{$event->description}}</p>
                 <br>
@@ -31,11 +30,13 @@
                     <p class="slide-locatie">{{$event->location}}</p>
                     <p class="slide-data">{{$event->formattedDate().' '.$event->formattedTime()}}</p>
                     </div>
-                      <button class="slide-bttn">Cumpara Acum</button>
-                  </div>
-              </div>
-              <img class="slide-img" src={{"/images/".$event->poster}}>
+                    <button class="slide-bttn">Cumpara Acum</button>
+                </div>
+            </div>
+            <img class="slide-img" src={{"/images/".$event->poster}}>
           </div>
+          <p class="slide-data-resp">{{$event->formattedDate().' '.$event->formattedTime()}}</p>
+          <button class="slide-bttn-resp">Cumpara Acum</button>
       </div>
   </div>
   @endforeach
