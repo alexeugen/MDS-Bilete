@@ -7,15 +7,24 @@ body {
   /* background: url(../img/background_login.jpg) no-repeat; */
   background-size: cover;
   background-color: rgb(49, 49, 49);
+  overflow-x: hidden;
 }
-
+.container-center{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  padding: 20px;
+}
 .login-box, .register-box {
   padding: 25px;
    width: 400px;
-   position: absolute;
+   /* position: absolute;
    top: 50%;
    left: 51%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */
    color: white;
    background-color: rgba(19, 77, 72, 0.74);
 }

@@ -1,5 +1,10 @@
 @extends('layouts.master')
 
+@push('styles')
+    
+<link href="/css/dashboard.css" rel="stylesheet">
+@endpush
+
 @section('content')
 <div class="container" id="manager-dashboard">
   <h2>Dashboard</h2>

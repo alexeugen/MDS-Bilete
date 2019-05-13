@@ -6,7 +6,7 @@
                Bilete Teatru
                 {{-- TO DO --}}
             </a>
-            </div>
+        </div>
         <div id="nav-search-area">
             {{-- <input type="text" placeholder="Cauta spectacole"> --}}
         </div>

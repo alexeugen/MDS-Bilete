@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@push('styles')
+<link href="/css/home.css" rel="stylesheet">
+@endpush
+
 @section('content')
      <!-- BEGINNING OF SLIDESHOW -->
  <div id="slideshow">
