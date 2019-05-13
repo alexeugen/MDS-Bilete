@@ -43,7 +43,7 @@
       </div>
   </form>
   <div>
-      <small class="text-muted">Need an account? <a class="ml-2" href="{% url 'register' %}"> Sign Up Now</a></small>
+      <small class="text-muted">Need an account? <a class="ml-2" href="{{route('register')}}"> Sign Up Now</a></small>
   </div>
 </div>
 </div>
