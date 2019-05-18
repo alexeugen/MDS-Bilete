@@ -11,7 +11,7 @@
 /* NAVIGATION BAR */
 
 nav{
-  width: 100%;
+  width: 100vw;
   height: 60px;
   /* background-color: hsl(268, 20%, 45%); */
   background-color: #3C3C3C;
@@ -48,10 +48,11 @@ nav{
   height: 30px;
   width: 30px;
 }
-#nav-logo-area>h1{
+#nav-logo-area>a{
   color: #FF5A5F;
   font-size: 15px;
   padding: 10px;
+  text-decoration: none;
 }
 #nav-search-area{
   display: flex;
@@ -106,14 +107,18 @@ main,footer{
 
 @media screen and (max-width: 925px) {
   main,footer{
-    top: 120px;
+    top: 90px;
   }
   nav{
-    height: 120px;
+    height: 90px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .login-button{
+    height: 30px;
+    font-weight: 600;
   }
   #nav-logo-area{
     padding: 0px;
@@ -121,8 +126,11 @@ main,footer{
     box-sizing: border-box;
     /* border: 2px solid yellow; */
   }
+  #nav-logo-area>a{
+    font-weight: 600;
+  }
   #nav-login-area{
-    height: 60px;
+    height: 30px;
     padding: 0px;
   }
 }
