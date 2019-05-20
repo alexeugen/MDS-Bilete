@@ -22,7 +22,7 @@ html,body{
   width: 100%;
   height: calc(160vh - 80px);
   overflow: hidden;
-  /* z-index: 10; */
+  z-index: 10;
 }
 .header-cover{
   /* background-color: aqua; */
@@ -248,4 +248,82 @@ html,body{
 }
 .review-rating{
   color: #FF5A5F;
+}
+.bttn-resp{
+  display: none;
+}
+
+@media screen and (max-width: 925px)
+{
+  .body-info{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 790px)
+{
+  
+  .ev-container{
+    width: 100%;
+    height: unset;
+    overflow-x: hidden;
+    /* z-index: 10; */
+  }
+  .body-info{
+    height:  unset;
+    margin-top: calc(60vh - 40px);
+    /* border: 2px solid blue; */
+    position: unset;
+
+  }
+  .bttn-resp{
+    display: block;
+  }
+  .top-left-left-data
+  {
+    width: 100%;
+    /* border: 2px solid navy; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .top-left-right-data
+  {
+    display: none;
+  }
+  .info-text
+  {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .top-data
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: unset;
+    /* border: 2px solid red; */
+    padding: 0px 0px 15px 0px;
+  }
+  .top-left-data
+  {
+    /* border: 2px solid yellow; */
+    width: 100%;
+  }
+  .top-right-data
+  {
+    /* border: 2px solid blue; */
+    width: 85%;
+    height: 60vw;
+    background-size: cover;
+  }
+  .bottom-data
+  {
+    height: unset;
+    padding: 25px;
+    /* border: 2px solid green; */
+  }
 }

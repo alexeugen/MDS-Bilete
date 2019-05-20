@@ -26,10 +26,13 @@
                 <div class="top-left-left-data">
                     <!-- <h3 class="info-text">The Guy Who Didn't Like Musicals</h3> -->
                     <!-- INFO EVENIMENT -->
-                <p class="info-text">Director: {{$event->regizor}}</p>
-                <p class="info-text">Location:{{$event->locatie}}</p>
-                <p class="info-text">Date:{{$event->formattedDate()}}</p>
-                <p class="info-text">Hour:{{$event->formattedTime()}}</p>
+                    <p class="info-text">Director: {{$event->regizor}}</p>
+                    <p class="info-text">Location:{{$event->locatie}}</p>
+                    <p class="info-text">Date:{{$event->formattedDate()}}</p>
+                    <p class="info-text">Hour:{{$event->formattedTime()}}</p>
+                    <button href="#" class="bttn bttn-resp" >
+                        Buy now
+                    </button>
                 </div>
                 <div class="top-left-right-data">
                     <!-- BUTON DE ACHIZITIONARE -->
@@ -38,8 +41,8 @@
                     </button>
                 </div>
             </div>
-        <div class="top-right-data" style="{{"background-image: url('/images/".$event->poster."')"}}">
-                
+            <div class="top-right-data" style="{{"background-image: url('/images/".$event->poster."')"}}">
+                    
             </div>
         </div>
         <div class="bottom-data">
