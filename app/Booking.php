@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Relations\Pivot;
 
 class Booking extends Pivot
 {
+    protected $table = 'bookings';
+
     /**
      * The attributes that are mass assignable.
      *

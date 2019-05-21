@@ -35,6 +35,6 @@ class Event extends Model
     }
 
     public function clients() {
-        return $this->belongsToMany('App\User', 'bookings');
+        return $this->belongsToMany('App\User', 'bookings')->using('App\Booking');
     }
 }

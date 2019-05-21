@@ -55,4 +55,9 @@ class EventsController extends Controller
 
         return view('pages.event')->with('event', $event);
     }
+
+    public function userEvents() {
+        $events = Auth::user()->spectacles;
+        return view('pages.events')->with('events', $events);
+    }
 }
