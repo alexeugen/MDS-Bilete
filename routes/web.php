@@ -33,3 +33,4 @@ Route::group(['middleware' => 'manager', 'prefix' => 'manager'], function () {
 });
 
 Route::get('/book/{id}', 'BookingController@store')->name('event.book');
+Route::get('/user/events', 'EventsController@userEvents')->name('user.events');

@@ -33,9 +33,9 @@
                 </div>
                 <div class="top-left-right-data">
                     <!-- BUTON DE ACHIZITIONARE -->
-                    <button href="#" class="bttn">
+                    <a href="{{route('event.book', ['id' => $event->id])}}" class="bttn">
                         Buy now
-                    </button>
+                    </a>
                 </div>
             </div>
         <div class="top-right-data" style="{{"background-image: url('/images/".$event->poster."')"}}">

@@ -14,9 +14,11 @@
 
             @auth
             <p class="user-name">{{Auth::user()->name}}</p>
-
-
-
+            <a href="{{route('user.events')}}" style="margin-left:10px;" class="login-button">
+                My Events
+            </a>
+            
+            
             @if (Auth::user()->type == 'manager')
             <a href="{{route('manager.dashboard')}}" style="margin-left:10px;" class="login-button">
                 Dashboard

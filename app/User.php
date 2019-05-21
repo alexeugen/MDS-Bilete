@@ -43,7 +43,7 @@ class User extends Authenticatable
     }
 
     
-    public function spectacle() {
-        return $this->belongsToMany('App\Event')->using('App\Booking');
+    public function spectacles() {
+        return $this->belongsToMany('App\Event', 'bookings')->using('App\Booking');
     }
 }
