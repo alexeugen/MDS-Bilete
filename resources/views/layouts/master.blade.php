@@ -13,13 +13,13 @@
     <link href="/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
     <link href="/css/bootstrap-datetimepicker-standalone.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    @stack('styles')
 
     <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/home.css" rel="stylesheet">
-    <link href="/css/login_register.css" rel="stylesheet">
-    <link href="/css/dashboard.css" rel="stylesheet">
-    <link href="/css/add_event.css" rel="stylesheet">
-    <link href="/css/event.css" rel="stylesheet">
+    
+    
+    
+  
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
@@ -33,8 +33,9 @@
     <!--navigation-->
     
     @include('partials.navbar')
-    
+    <main>
     @yield('content')
+    </main>
     
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

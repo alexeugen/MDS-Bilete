@@ -1,21 +1,74 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
-body {
+  body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Serif JP', serif !important;
-  /* background: url(../img/background_login.jpg) no-repeat; */
+  background: url(../img/background_login.jpg) no-repeat;
   background-size: cover;
-  background-color: rgb(49, 49, 49);
+  background-color: black;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-size: auto;
+  }
+  .login-box{
+    width:40vw;
+    height:10%;
+  }
+  
+  .register-box{
+
+  }
+  
+  .style-txt {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1% solid #ff0000;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: black;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Serif JP', serif !important;
+  background: url(../img/background_login.jpg) no-repeat;
+  background-size: cover;
+  background-color: black;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  }
+}
+.container-center{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  padding: 20px;
 }
 
 .login-box, .register-box {
   padding: 25px;
    width: 400px;
-   position: absolute;
+   /* position: absolute;
    top: 50%;
    left: 51%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */
    color: white;
    background-color: rgba(19, 77, 72, 0.74);
 }
@@ -40,6 +93,7 @@ body {
 
 .button:hover{
   background-color: #ff0000;
+  border-color: #ff0000;
 }
 .form-group{
   border:none;
@@ -87,20 +141,34 @@ fas{
   border: none;
   outline:none;
   background: none;
-  color: white;
+  color: white !important;
   font-size: 18px;
   width: 80%;
   float:left;
   margin: 0 10px;
 }
+
 div .text-muted{
   margin-left: 15px;
   margin-top: 20%;
   float:left;
-  color: grey;
+  color: white;
+}
+
+.textbox select {
+  background:none;
+  border:none;
+  color:white;
+  background-color: none;
+  text-shadow: none;
+}
+
+.textbox select option[value="client"],.textbox select option[value="manager"] {
+  background: rgba(19, 77, 72, 0.74);
+  color:white;
 }
 .txt{
-color: grey;
+color: white;
 }
 a{
   color: #ff0000;

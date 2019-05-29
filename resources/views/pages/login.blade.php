@@ -1,6 +1,11 @@
 @extends('layouts.master')
 
+@push('styles')
+    <link href="/css/login_register.css" rel="stylesheet">
+@endpush
+
 @section('content')
+<div class="container-center">
 <div class="login-box">
     <form method="POST" action="{{ route('login') }}">
       <!--Security token-->
@@ -38,7 +43,8 @@
       </div>
   </form>
   <div>
-      <small class="text-muted">Need an account? <a class="ml-2" href="{% url 'register' %}"> Sign Up Now</a></small>
+      <small class="text-muted">Need an account? <a class="ml-2" href="{{route('register')}}"> Sign Up Now</a></small>
   </div>
+</div>
 </div>
 @endsection

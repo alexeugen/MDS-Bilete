@@ -31,3 +31,5 @@ Route::group(['middleware' => 'manager', 'prefix' => 'manager'], function () {
     Route::get('/add-event', 'EventsController@create')->name('create.event');
     Route::post('/add-event', 'EventsController@store')->name('add.event');
 });
+
+Route::get('/book/{id}', 'BookingController@store')->name('event.book');

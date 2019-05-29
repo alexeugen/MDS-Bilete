@@ -18,7 +18,7 @@ class Event extends Model
     
     public function user()
     {
-        return $this->belongsTo('App\Post');
+        return $this->belongsTo('App\User');
     }
 
     public function formattedDate()
@@ -32,5 +32,9 @@ class Event extends Model
     {
         $date = new Carbon($this->data);
         return $date->format("h:i");
+    }
+
+    public function clients() {
+        return $this->belongsToMany('App\User', 'bookings');
     }
 }
