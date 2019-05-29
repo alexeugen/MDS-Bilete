@@ -49,7 +49,14 @@
           </span>
       @endif
           <p>Hour</p>
-          <input name="hour" type="text" class="form-control{{ $errors->has('hour') ? ' is-invalid' : '' }}" value="{{ old('hour') }}">
+          <div class='input-group date' id='datetimepicker3'>
+            <input type='text' name = 'hour' class="form-control" />
+            <span class="input-group-addon">
+                <span class="glyphicon glyphicon-time" id="small-clock"></span>
+            </span>
+          </div>
+
+          {{-- <input name="hour" type="text" class="form-control{{ $errors->has('hour') ? ' is-invalid' : '' }}" value="{{ old('hour') }}"> --}}
           @if ($errors->has('hour'))
           <span class="invalid-feedback" role="alert">
               <strong>{{ $errors->first('hour') }}</strong>
@@ -91,3 +98,16 @@
 <br>
 
 @endsection
+
+@push('scripts')
+<script src="/js/moment.js"></script>
+<script type="text/javascript" src="/js/bootstrap-datetimepicker.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker3').datetimepicker({
+            format: 'LT'
+        });
+    });
+  </script>
+@endpush

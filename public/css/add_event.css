@@ -40,3 +40,10 @@ body {
   margin-top: 1rem;
   margin-bottom: 2px;
 }
+
+/* de ce nu il ia??????? */
+#small-clock {
+  font-size: 150px !important;
+  width: 100px !important;
+  color: red;
+}
