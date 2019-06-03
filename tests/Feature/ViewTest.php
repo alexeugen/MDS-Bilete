@@ -3,19 +3,20 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class ExampleTest extends TestCase
+class ViewTest extends TestCase
 {
     /**
-     * A basic test example.
+     * Test first page app name display
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testExample()
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        $response->assertSee('Eventino');
     }
 }

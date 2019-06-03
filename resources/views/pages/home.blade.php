@@ -44,7 +44,7 @@
 </div>
 <!-- END OF SLIDESHOW -->
 
-<div class=" cards-container" id="home-events">
+<div class="container cards-container" id="home-events">
   <div class="row">
     @foreach ($events as $event)
       <div class="col-md-6">

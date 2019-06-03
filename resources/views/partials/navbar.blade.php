@@ -2,8 +2,8 @@
     <nav>
         <div id="nav-logo-area">
             <i class="fas fa-ticket-alt" style="font-size: 40px; color: gray;"></i>
-            <a href="{{route('home')}}" style="list-style-type: none; margin-left:10px;">
-               Bilete Teatru
+            <a href="{{route('home')}}" class="navi-brand" style="list-style-type: none; margin-left:10px;">
+               Eventino
                 {{-- TO DO --}}
             </a>
         </div>

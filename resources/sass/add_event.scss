@@ -1,0 +1,42 @@
+body {
+  
+}
+
+#add-event {
+  background: rgb(216, 216, 216);
+  padding: 40px;
+}
+
+
+#add-event input{
+  background: white !important;
+  padding: 6px;
+  height: 44px;
+  border-radius: 3px;
+  border: 1px solid rgb(204, 101, 101) !important;
+} 
+
+#add-event textarea{
+  background: white !important;
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid rgb(204, 101, 101) !important;
+} 
+
+#add-event form{
+  width: 100%;
+} 
+
+#add-event .btn-submit {
+  cursor: pointer;
+  background: #b44040 !important;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  height: 40px;
+}
+
+#add-event p {
+  margin-top: 1rem;
+  margin-bottom: 2px;
+}

@@ -31,7 +31,7 @@ class Event extends Model
     public function formattedTime()
     {
         $date = new Carbon($this->data);
-        return $date->format("h:m");
+        return $date->format("h:i");
     }
 
     public function clients() {
